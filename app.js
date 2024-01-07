@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM  from "react-dom/client";
+
 const heading2 =  React.createElement(
     "div",
     { id: "child2" }, [
