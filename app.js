@@ -9,8 +9,9 @@ const heading = React.createElement(
 
 console.log(heading);
 
-const jsxheading = <h1 id="heading">namaste react using jsx</h1>
+const jsxheading = (<h1 className="head" tabIndex="5">namaste react using jsx</h1>
 
+)
 const root =  ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(jsxheading);
