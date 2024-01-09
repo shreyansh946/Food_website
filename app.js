@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM  from "react-dom/client";
 
-
+//React Element
 const heading = React.createElement(
     "h1", {id:"heading"},
     "Shreyansh jain"
@@ -9,9 +9,14 @@ const heading = React.createElement(
 
 console.log(heading);
 
-const jsxheading = (<h1 className="head" tabIndex="5">namaste react using jsx</h1>
 
-)
+
+const  HeadingComponent = () =>{
+            <div id="container">
+                    <h1 className="heading"> Namaste react functional Components</h1>
+            </div>
+};
+
 const root =  ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxheading);
+root.render(<HeadingComponent/>);
