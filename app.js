@@ -35,15 +35,21 @@ const Header = () =>{
 }
 
 
+const resObject = {
+    data : {
+        
+    }
+}
 
-const RestaurantCard = () =>{
+
+const RestaurantCard = ({resName, cuisine}) =>{
     return (
         <div className="res-card">
                 
                 <img className="res-logo"
                  alt="res-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e7qwxlmhvlxj96hiaqv5" />
-                <h3>hunger hub</h3>
-                <h4>Pizza, Burger, pasta</h4>
+                <h3>{resName}</h3>
+                <h4>{cuisine}</h4>
                 <h4>4 stars</h4>
                 <h4>30mins</h4>
         </div>
@@ -57,13 +63,8 @@ const Body = () =>{
                     Search
             </div>
             <div className="res-container">
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
+                <RestaurantCard resName="hunger hub" cuisine="Pizza, Burger, pasta" />
+                <RestaurantCard resName="domino" cuisine="Pizza, Burger, drinks"/>
             </div>
         </div>
     )
