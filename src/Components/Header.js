@@ -1,19 +1,24 @@
-const Header = () =>{
-    return (
-        <div className="header">
-                 <div className="logo-container">
-                <img className="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ_ulieTqHiPHn4AENW1oq01BtzsBWBCwJ2Q&usqp=CAU" />
-            </div>
-            <div className="nav-items">
-                <ul>
-                    <li>home</li>
-                    <li>about us</li>
-                    <li>contact us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
+import React from "react";
+
+const Header = () => {
+  return (
+    <header className='header'>
+      <div className='logo-container'>
+        <h1 className='logo'>
+          LOGO
+        </h1>
+      </div>
+      <div className='nav-items'>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Categories</li>
+        </ul>
+      </div>
+      <div>
+      </div>
+    </header>
+  );
+};
 
 export default Header;
