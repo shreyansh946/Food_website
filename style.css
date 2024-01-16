@@ -7,29 +7,29 @@
 .logo{
     width: 200px;
 }
-.nav-items{
+.nav-items{ 
     padding: 0px 20px;
 }
 
-.nav-items ul{
+.nav-items > ul{
     display: flex;
     font-size: 24px;
      list-style-type: none;
 }
-.nav-items ul li{
+.nav-items > ul > li{
         padding: 10px;
         margin: 10px;
 }
 
-.search{
+.filter{
     padding: 10px;
 }
 
 .res-card{
-    margin: 5px;
-    padding: 6px;
-    width: 200px;
-    height: 300px;
+    margin: 4px;
+    padding: 8px;
+    width: 150px;
+    height: 400px;
     background-color: #f0f0f0;
 }
 
@@ -43,5 +43,12 @@
 }   
 
 .res-logo{
-    width: 200px;
+    width: 150px;
+}
+
+.filter-btn{
+
+    margin: 10px;
+    cursor: pointer;
+
 }
