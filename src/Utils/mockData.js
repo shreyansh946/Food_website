@@ -1,4 +1,4 @@
-const resDataList = [
+const resList = [
     {
       type: "restaurant",
       data: {
@@ -116,7 +116,7 @@ const resDataList = [
         uuid: "b63a64e0-bb6b-4f2d-bcdf-128668d754f3",
         city: "10040",
         area: "Rajbagh",
-        totalRatingsString: "Too Few Ratings",
+        totalRatingsString: "80+ Ratings",
         cloudinaryImageId: "0a6e93fd9ca6dd1ad08d4785e6bfcb6b",
         cuisines: ["North Indian", "Kebabs"],
         tags: [],
@@ -1532,4 +1532,4 @@ const resDataList = [
     },
   ];
   
-  export default resDataList;
+  export default resList;

@@ -7,10 +7,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const AppLayout = () => {
   return (
-    <>
-      <Header />
-      <Body />
-    </>
+   <div className="app">
+      <Header/>
+      <Body/>
+    </div>
   );
 };
 

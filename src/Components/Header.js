@@ -1,5 +1,3 @@
-import React from "react";
-
 const Header = () => {
   return (
     <header className='header'>
@@ -12,10 +10,9 @@ const Header = () => {
         <ul>
           <li>Home</li>
           <li>About</li>
-          <li>Categories</li>
+          <li>Contact us</li>
+          <li>Cart</li>
         </ul>
-      </div>
-      <div>
       </div>
     </header>
   );
