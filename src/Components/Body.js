@@ -1,8 +1,11 @@
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
+
+  const [searchText,setsearchText] = useState("");
 
   useEffect(() => {
     fetchData();
@@ -24,14 +27,22 @@ const Body = () => {
     }
   };
 
-  return (
+  return listOfRestaurants.length === 0 ? (<Shimmer />  ): (
     <div className="body">
       <div className="filter">
+        <div className="search">
+                <input type="text" className="search-box" value={searchText}></input>
+                  <button onClick={() =>{
+
+                  }}>Search</button>
+        </div>
+
+
         <button
           className="filter-btn"
           onClick={() => {
             const filteredRestaurants = listOfRestaurants.filter(
-              (res) => res.data.avgRating > 4
+              (res) => res.info.avgRating > 4
             );
             setListOfRestaurants(filteredRestaurants);
             console.log(filteredRestaurants);
