@@ -1,7 +1,7 @@
 const resList = [
     {
       type: "restaurant",
-      data: {
+      info: {
         type: "F",
         id: "667593",
         name: "Mad for Momos",
