@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const[btnNameReact,setbtnNameReact] = useState("login");
   
-  
+    
   return (
     <header className='header'>
       {/* Logo container */}
